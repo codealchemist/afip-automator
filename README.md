@@ -2,6 +2,9 @@
 
 A little automation tool to ease the burden of tedious accounting tasks.
 
+<img width="567" alt="image" src="https://github.com/codealchemist/afip-automator/assets/1118293/ecf084ab-6a09-4ce1-a830-a793f48ab96a">
+
+
 ## About
 
 It uses [Nightwatch.js](https://nightwatchjs.org/) to run an automation script on the AFIP platform using Chrome.
