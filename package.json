@@ -1,0 +1,21 @@
+{
+  "name": "afip-automator",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node run-invoice.js",
+    "invoice": "nightwatch test/afip.invoice.service.expo.js"
+  },
+  "keywords": [],
+  "author": "Alberto Miranda",
+  "license": "ISC",
+  "devDependencies": {
+    "nightwatch": "^3.4.1"
+  },
+  "dependencies": {
+    "inquirer": "^9.2.16",
+    "pkg-banner": "^1.0.0"
+  }
+}
