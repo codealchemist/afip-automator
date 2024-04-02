@@ -1,10 +1,14 @@
 const AMOUNT = process.env.AMOUNT
+const SELL_POINT_OPTION = process.env.SELL_POINT_OPTION
+const COUNTRY_OPTION = process.env.COUNTRY_OPTION
 const COUNTRY_ID = process.env.COUNTRY_ID
 const COMPANY_ID = process.env.COMPANY_ID
 const COMPANY_NAME = process.env.COMPANY_NAME
 const COMPANY_ADDRESS = process.env.COMPANY_ADDRESS
 const COMPANY_EMAIL = process.env.COMPANY_EMAIL
+const DESCRIPTION = process.env.DESCRIPTION
 const USERNAME = process.env.USERNAME
+const PASSWORD = process.env.PASSWORD
 
 describe('afip.factura.bert', function () {
   it('tests afip.factura.bert', function (browser) {
@@ -49,12 +53,12 @@ describe('afip.factura.bert', function () {
       .pause(1000)
       .click('#puntodeventa')
       .pause(500)
-      .click('#puntodeventa option[value="3"]')
+      .click(`#puntodeventa option[value="${SELL_POINT_OPTION}"]`)
       .click('body')
       .click('form > input:nth-of-type(2)')
       .pause(1000)
       .click('#idconcepto')
-      .click('#idconcepto option[value="2"]')
+      .click(`#idconcepto option[value="2"]`)
       .pause(1000)
       .click('#actiAsociadaId')
       .setValue('#actiAsociadaId', '620100')
@@ -63,7 +67,7 @@ describe('afip.factura.bert', function () {
       .pause(1000)
       .click('#destino')
       .pause(1000)
-      .click('#destino option[value="225"]')
+      .click(`#destino option[value="${COUNTRY_OPTION}"]`)
       .pause(500)
       .click('#nrodocreceptor')
       .pause(1000)
@@ -82,7 +86,7 @@ describe('afip.factura.bert', function () {
       .pause(1000)
       .click('#detalle_descripcion1')
       .setValue('#detalle_descripcion1', 'S')
-      .setValue('#detalle_descripcion1', 'Software development services')
+      .setValue('#detalle_descripcion1', DESCRIPTION)
       .click('#detalle_medida1')
       .setValue('#detalle_medida1', '7')
       .click('#detalle_precio1')
