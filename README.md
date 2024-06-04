@@ -4,7 +4,6 @@ A little automation tool to ease the burden of tedious accounting tasks.
 
 <img width="567" alt="image" src="https://github.com/codealchemist/afip-automator/assets/1118293/ecf084ab-6a09-4ce1-a830-a793f48ab96a">
 
-
 ## About
 
 It uses [Nightwatch.js](https://nightwatchjs.org/) to run an automation script on the AFIP platform using Chrome.
@@ -26,9 +25,9 @@ PASSWORD=[YOUR_PASSWORD]
 
 # TRUELOGIC
 SELL_POINT_OPTION=[SELL_POINT_OPTION]
-COUNTRY_OPTION=[COUNTRY_OPTION] # 225=Uruguay
-COUNTRY_ID=[TARGET_COUNTRY_ID]
-COMPANY_ID=[TARGET_COMPANY_ID]
+COUNTRY_OPTION=[COUNTRY_OPTION] # País destino. 212=Estados Unidos, 225=Uruguay
+COUNTRY_ID=[TARGET_COUNTRY_ID] # CUIT país receptor
+COMPANY_ID=[TARGET_COMPANY_ID] # CUIT empresa
 COMPANY_NAME=[TARGET_COMPANY_NAME]
 COMPANY_ADDRESS=[TARGET_COMPANY_ADDRESS]
 COMPANY_EMAIL=[TARGET_COMPANY_EMAIL]
