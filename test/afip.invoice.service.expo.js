@@ -47,7 +47,8 @@ describe('afip.factura.bert', function () {
         console.log('HANDLES', result.value)
         browser.window.switchTo(handle)
       })
-      .click("input[type='button']")
+      .waitForElementVisible("input[type='button']", 10000)
+      .click("input[type='button']") // btn_empresa ui-button ui-widget ui-state-default ui-corner-all ui-state-focus
       .click('tr:nth-of-type(1) span.ui-button-text')
       .pause(1000)
       .click('#puntodeventa')
